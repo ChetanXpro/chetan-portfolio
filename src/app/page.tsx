@@ -1,12 +1,13 @@
+import About from "@/pages/About";
+import Projects from "@/pages/Projects";
 import Image from "next/image";
+import Project from "./projects/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-3 p-24">
-      <h1 className="text-3xl">
-        Hey there! I'm <span className="text-blue-500">Chetan</span> 👋
-      </h1>
-      <h3 className="text-2xl">I love building stuff</h3>
+    <main className="flex bg-black text-white font-mono min-h-screen flex-col    items-center   ">
+      <About />
+      <Project />
     </main>
   );
 }
