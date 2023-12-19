@@ -4,7 +4,7 @@ import React from "react";
 const Achievement = () => {
   return (
     <div className="gap-10 items-center flex flex-col">
-      <h1 className="text-2xl">Achievement</h1>
+      <h1 className="text-2xl font-bold">Some Achievements</h1>
       <div className="flex gap-10 px-10 flex-wrap">
         {/* <div className="w-[50%] flex flex-wrap gap-1"> */}
         <div className="flex flex-col gap-5">
@@ -23,12 +23,12 @@ We have introduced user abstraction to shield users from the complexities of the
         <div className="flex flex-col gap-5">
           <h1>Date: October 2023</h1>
           <AchievementCard
-            name="2 Million+ Views on Instagram Using My Short video automation tool"
+            name="I achieved 2 million+ views on Instagram using my short video automation tool."
             description={`
-            I build this tool to automate the process of creating short videos for Instagram , Youtube Shorts and tiktok , I have use quora to scrape data and then use that data to generate short videos , a user just need to provide a interesting quora link , and then tool will automatically generate short video for it , i generated 30+ videos with this tool and uploaded those on instagram , and it turned out that i got more then 2 million views and tousand of likes comments , in future i will add more templates to it.
+            I built this tool to automate the process of creating short videos for Instagram, YouTube Shorts, and TikTok. I used Quora to scrape data and then utilized that data to generate short videos. A user just needs to provide an interesting Quora link, and the tool will automatically generate a short video for it. I generated 30+ videos with this tool and uploaded them on Instagram. It turned out that I got more than 2 million views and thousands of likes and comments. In the future, I will add more templates to it.
           `}
             button={{
-              link: "https://www.instagram.com/p/CVJZ3Z2rZ9z/",
+              link: "https://www.instagram.com/factsclipzz/reels",
               name: "View Instagram Account",
             }}
           />

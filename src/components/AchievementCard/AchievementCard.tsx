@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const AchievementCard = ({
   name,
@@ -26,7 +27,11 @@ const AchievementCard = ({
         {image && (
           <Image src={image} width={size} height={size} alt="ethdubai image" />
         )}
-        {button && <Button className="w-[20rem]">{button.name}</Button>}
+        {button && (
+          <Link href={button.link}>
+            <Button className="w-[20rem]">{button.name}</Button>
+          </Link>
+        )}
       </div>
     </div>
   );

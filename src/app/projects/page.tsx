@@ -181,7 +181,7 @@ const Project = () => {
   return (
     <div className=" bg-black w-full  text-white  flex-col flex items-center   ">
       <div className=" w-full  h-[10%]  flex items-center justify-center ">
-        <h1 className="text-2xl ">Projects</h1>
+        <h1 className="text-2xl font-bold ">Projects</h1>
       </div>
       <div className="flex relative mt-10 h-full  flex-1    justify-between w-full">
         <div className="  h-full  w-full md:w-[60%] flex flex-1 items-center  flex-col ">

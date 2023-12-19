@@ -21,14 +21,14 @@ const About = () => {
               HTML, CSS, and JS. Addicted to coding, I dedicated 10-15 hours
               daily to it. Within 3 months, I gained skills in JS, ReactJS, and
               acquired a grasp of the basics of blockchains, understanding how
-              they work, and landed an internship as a full-stack dev. Then, I
-              explored more about Ethereum and Flow blockchains and got really
+              they work, and landed an internship as a full-stack dev. And then,
+              I explored more about Ethereum and Flow blockchains. I got really
               into decentralization and writing smart contracts. I also won two
               blockchain hackathons. After that, OpenAI released LLM and an API
-              for it, which attracted me to learn more about General AI. I
-              started exploring how LLM works and built some very interesting
-              projects like an AI Telegram chatbot and tools to extract
-              structured info from PDFs and many others.
+              for it, which attracted me to learn more about Gen AI. I started
+              exploring how LLM works and built some very interesting projects
+              like an AI Telegram chatbot and tools to extract structured info
+              from PDFs and many others.
             </p>
 
             <p
@@ -37,19 +37,19 @@ const About = () => {
                 setShowWhyNonTech(!showWhyNonTech);
               }}
             >
-              =: Why a Guy from Non-tech degree doing tech stuff ?
+              =: Click here if you are curious about why a guy with a non-tech
+              degree is doing tech stuff.
             </p>
 
             {showWhyNonTech && (
               <p>
-                So, from a young age, I was very interested in computers and
-                their languages. However, I was more interested in cricket, so I
-                did not focus on learning computers very much. I played cricket
-                at some levels, and at that time, I invested too much time in
-                cricket. To give more time to it, I took a non-tech course in my
-                college, but, in the end, I had to leave it due to some family
-                reasons. So, then I thought, 'Now what?' Then I tried to learn
-                some tech stuff.
+                From a young age, I was very interested in computers and their
+                languages. However, my greater passion was cricket, so I didn't
+                focus much on learning computers. I played cricket at different
+                levels, investing a lot of time in it. I chose an easier,
+                non-tech course in college, but, in the end, I had to leave it
+                due to some personal reasons. So, I thought, 'Now what?' That's
+                when I decided to get into Tech.
               </p>
             )}
           </div>
