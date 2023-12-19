@@ -32,140 +32,11 @@ const Project = () => {
       ],
       FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
     },
+
     {
-      name: "Nodejs whisper",
+      name: "Chatgpt Telegram Bot",
       description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
-      githubLink: "",
-      buttons: [
-        {
-          name: "Github Link",
-          link: "",
-        },
-      ],
-      FullDescriptionHTML: `NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.`,
-    },
-    {
-      name: "Nodejs whisper",
-      description:
-        "NodeJS Bindings for Whisper - the CPU version of OpenAI's Whisper, as initially crafted in C++ by ggerganov.",
+        "A Telegram chatbot that can answer your questions, generate text-to-image and text-to-audio, correct grammar in English, and even send you random funny jokes.",
       githubLink: "",
       buttons: [
         {
@@ -189,6 +60,7 @@ const Project = () => {
             {projectsList.map((project) => {
               return (
                 <ProjectCard
+                  key={project.name}
                   onClick={() => {
                     console.log("clicked");
                     console.log(project);
@@ -215,7 +87,7 @@ const Project = () => {
               <div>
                 {selectedProject?.buttons.map((button) => {
                   return (
-                    <Button>
+                    <Button key={button.name}>
                       <Link href={button.link}>{button.name}</Link>
                     </Button>
                   );

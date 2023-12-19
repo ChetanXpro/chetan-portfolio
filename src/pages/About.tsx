@@ -8,7 +8,8 @@ const About = () => {
     <div className=" items-center justify-center w-full flex flex-col min-h-screen ">
       <div className=" min-h-screen w-[100%] flex gap-8 justify-center flex-col items-center ">
         <h1 className="text-3xl">
-          Hey there! I'm <span className="text-blue-500">Chetan Baliyan</span>
+          Hey there! I&apos;m{" "}
+          <span className="text-blue-500">Chetan Baliyan</span>
         </h1>
         <h3 className="text-2xl">I love building stuff</h3>
 
@@ -44,12 +45,12 @@ const About = () => {
             {showWhyNonTech && (
               <p>
                 From a young age, I was very interested in computers and their
-                languages. However, my greater passion was cricket, so I didn't
-                focus much on learning computers. I played cricket at different
-                levels, investing a lot of time in it. I chose an easier,
-                non-tech course in college, but, in the end, I had to leave it
-                due to some personal reasons. So, I thought, 'Now what?' That's
-                when I decided to get into Tech.
+                languages. However, my greater passion was cricket, so I
+                didn&apos;t focus much on learning computers. I played cricket
+                at different levels, investing a lot of time in it. I chose an
+                easier, non-tech course in college, but, in the end, I had to
+                leave it due to some personal reasons. So, I thought, &apos;Now
+                what?&apos; That&apos;s when I decided to get into Tech.
               </p>
             )}
           </div>

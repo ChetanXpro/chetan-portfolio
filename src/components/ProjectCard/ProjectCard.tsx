@@ -30,7 +30,7 @@ const ProjectCard = ({
       <div>
         {project?.buttons.map((button) => {
           return (
-            <Button>
+            <Button key={button.name}>
               <Link href={button.link}>{button.name}</Link>
             </Button>
           );
