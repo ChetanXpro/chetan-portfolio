@@ -26,7 +26,7 @@ const ProjectCard = ({
       className="flex cursor-pointer flex-col gap-3 border p-2"
     >
       <h1 className="text-lg">{project.name}</h1>
-      <p className="text-sm">{project.FullDescriptionHTML}</p>
+      <p className="text-sm">{project.description}</p>
       <div>
         {project?.buttons.map((button) => {
           return (
