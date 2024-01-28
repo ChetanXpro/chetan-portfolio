@@ -1,11 +1,12 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" items-center justify-center w-full flex flex-col min-h-screen ">
-      <div className=" min-h-screen w-[100%] flex gap-3 justify-center flex-col items-center ">
+    <div className=" items-center justify-center w-full flex flex-col h-[90vh] ">
+      <div className=" min-h-screen w-[100%] flex gap-4 justify-center flex-col items-center ">
         <h1 className="text-4xl">
           Hey There! I&apos;m{" "}
           <span className="text-blue-500">Chetan Baliyan.</span>
@@ -23,7 +24,7 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center mb-3 text-[#616161] justify-center">
+        <div className="flex text-base font-thin items-center mb-3 text-[#616161] justify-center">
           <a
             href="https://github.com/chetanXpro"
             target="_blank"
@@ -56,9 +57,9 @@ const Hero = () => {
             data-v-26e26f8f=""
             href="https://www.linkedin.com/in/chetan-baliyan/"
             target="_blank"
-            className="flex gap-1 items-center mx-3"
+            className="flex gap-1 items-center mx-2"
           >
-            <div data-v-41a1427e="" className="flex gap-1 items-center mx-3">
+            <div data-v-41a1427e="" className="flex gap-1 items-center mx-2">
               <svg
                 data-v-41a1427e=""
                 aria-hidden="true"
@@ -81,13 +82,42 @@ const Hero = () => {
               </p>
             </div>
           </a>
+          <a
+            data-v-41a1427e=""
+            data-v-26e26f8f=""
+            href="https://twitter.com/Chetanbaliyan16"
+            target="_blank"
+            className="flex gap-1 items-center mx-2"
+          >
+            <div data-v-41a1427e="" className="flex gap-1 items-center mx-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                enable-background="new 0 0 72 72"
+                viewBox="0 0 72 72"
+                id="twitter-x"
+                className="h-4"
+              >
+                <switch>
+                  <g>
+                    <path
+                      d="M42.5,31.2L66,6h-6L39.8,27.6L24,6H4l24.6,33.6L4,66
+			h6l21.3-22.8L48,66h20L42.5,31.2z M12.9,10h8l38.1,52h-8L12.9,10z"
+                    ></path>
+                  </g>
+                </switch>
+              </svg>
+              <p data-v-41a1427e="" className="text-icon-link-name">
+                Chetanbaliyan16
+              </p>
+            </div>
+          </a>
 
           <a
             href="mailto:chetanbaliyan10@gmail.com"
             target="_blank"
-            className="text-icon-link text-link mx-3"
+            className="text-icon-link text-link mx-2"
           >
-            <div data-v-41a1427e="" className="flex gap-1 items-center mx-3">
+            <div data-v-41a1427e="" className="flex gap-1 items-center mx-2">
               <svg
                 data-v-41a1427e=""
                 aria-hidden="true"
@@ -109,6 +139,21 @@ const Hero = () => {
                 chetanbaliyan10@gmail.com
               </p>
             </div>
+          </a>
+        </div>
+        <div className="flex items-center  w-full justify-center gap-4">
+          <a href="mailto:chetanbaliyan10@gmail.com">
+            <Button className="w-24 py-6 border border-blue-500 hover:bg-blue-500 hover:text-white font-medium text-base bg-white text-black">
+              Contact
+            </Button>
+          </a>
+          <a
+            target="_blank"
+            href={`${process.env.BASE_DOMAIN}/assets/Chetan_Resume.pdf`}
+          >
+            <Button className="w-24 py-6 border border-blue-500 hover:bg-blue-500 hover:text-white font-medium text-base bg-white text-black">
+              Resume
+            </Button>
           </a>
         </div>
       </div>

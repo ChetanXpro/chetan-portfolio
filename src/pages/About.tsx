@@ -4,13 +4,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className=" items-center justify-center w-full flex flex-col min-h-screen ">
-      <div className=" min-h-screen w-[100%] flex gap-3 justify-center flex-col items-center ">
-        <h1 className="text-3xl">
-          Hey There! I&apos;m{" "}
-          <span className="text-blue-500">Chetan Baliyan.</span>
-        </h1>
-        <h3 className="text-2xl">I love building stuff</h3>
+    <div className=" items-center   w-full flex flex-col h-[90vh] ">
+      <div className=" w-[100%] flex gap-3 justify-center flex-col items-center ">
+        <h1 className="text-3xl">About Me</h1>
 
         <div className="  gap-3 flex flex-col items-center p-3  w-[80%]">
           {/* <h1 className="text-base">Abo</h1> */}
