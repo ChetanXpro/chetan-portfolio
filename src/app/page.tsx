@@ -7,7 +7,7 @@ import Hero from "@/pages/Hero";
 
 export default function Home() {
   return (
-    <main className="flex bg-white  text-[#212121] font-mono gap-20 min-h-screen flex-col    items-center   ">
+    <main className="flex bg-white  text-[#212121]  gap-20 min-h-screen flex-col    items-center   ">
       <Hero />
       <About />
       <Achievement />

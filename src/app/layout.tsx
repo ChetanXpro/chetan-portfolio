@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Chetan Baliyan",
@@ -16,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>
+        {children}
+        <div className="w-full  justify-center flex">
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

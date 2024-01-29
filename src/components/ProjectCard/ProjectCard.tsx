@@ -15,19 +15,25 @@ interface Project {
 
 const ProjectCard = ({
   onClick,
+  selectedProject,
   project,
 }: {
   onClick?: () => void;
   project: Project;
+  selectedProject?: Project;
 }) => {
   return (
     <div
       onClick={onClick}
-      className="flex cursor-pointer flex-col gap-3 border p-2"
+      className={`flex cursor-pointer py-6 flex-col gap-3  ${
+        selectedProject?.name === project.name
+          ? "border border-black"
+          : "border"
+      } p-2`}
     >
-      <h1 className="text-lg">{project.name}</h1>
-      <p className="text-sm">{project.description}</p>
-      <div>
+      <h1 className="text-lg text-[#212121]">{project.name}</h1>
+      <p className="text-sm text-[#616161]">{project.description}</p>
+      {/* <div>
         {project?.buttons.map((button) => {
           return (
             <Button key={button.name}>
@@ -35,7 +41,7 @@ const ProjectCard = ({
             </Button>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

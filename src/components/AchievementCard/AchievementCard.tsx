@@ -30,9 +30,7 @@ const AchievementCard = ({
 
         <h1 className="text-lg">{name}</h1>
         <p className="text-sm">{description}</p>
-        {image && (
-          <Image src={image} width={size} height={size} alt="ethdubai image" />
-        )}
+
         {button && (
           <Link href={button.link}>
             <Button className="w-[20rem]">{button.name}</Button>

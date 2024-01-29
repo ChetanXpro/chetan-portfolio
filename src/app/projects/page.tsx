@@ -279,13 +279,13 @@ Objects in Git include things like commit objects, where details about changes a
 
   const [selectedProject, setSelectedProject] = React.useState(projectsList[0]);
   return (
-    <div className=" bg-black w-full  text-white  flex-col flex items-center   ">
+    <div className="  w-[80%]  text-white  flex-col flex items-center   ">
       <div className=" w-full  h-[10%]  flex items-center justify-center ">
-        <h1 className="text-2xl font-bold ">Projects</h1>
+        <h1 className="text-2xl font-bold text-black ">Projects</h1>
       </div>
       <div className="flex relative mt-10 h-full  flex-1    justify-between w-full">
         <div className="  h-full  w-full md:w-[60%] flex flex-1 items-center  flex-col ">
-          <div className=" flex-1 text-white w-full flex flex-col gap-2 p-3 ">
+          <div className="flex-1 border text-white w-full flex flex-col gap-4 p-3 ">
             {projectsList.map((project) => {
               return (
                 <ProjectCard
@@ -296,6 +296,7 @@ Objects in Git include things like commit objects, where details about changes a
 
                     setSelectedProject(project);
                   }}
+                  selectedProject={selectedProject}
                   project={project}
                 />
               );
@@ -303,13 +304,15 @@ Objects in Git include things like commit objects, where details about changes a
           </div>
         </div>
 
-        <div className="flex-1 sticky top-3 mt-3 h-full overflow-y-auto  border   items-center     hidden md:flex md:flex-col py-7">
+        <div className="flex-1 sticky top-3 h-full overflow-y-auto  border-black border        hidden md:flex md:flex-col py-7">
           <div className=" px-4">
-            <h1 className="text-xl">Project Details</h1>
+            <h1 className="text-xl text-black underline">Project Details</h1>
             <div className="flex flex-col gap-3 py-4">
-              <h1 className="text-lg">{selectedProject?.name}</h1>
+              <h1 className="text-lg text-[#212121]">
+                {selectedProject?.name}
+              </h1>
               <div>
-                <p className="text-sm">
+                <p className="text-sm text-[#616161]">
                   {selectedProject?.FullDescriptionHTML}
                 </p>
               </div>

@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="  gap-3 flex flex-col items-center p-3  w-[60%]">
           {/* <h1 className="text-base">Abo</h1> */}
           <div className="gap-10 flex flex-col">
-            <p className="text-base font-extralight text-[#616161] text-center">
+            <p className="text-base font-normal text-[#616161] text-center">
               I am based in Muzaffarnagar, India. I have experience developing
               and maintaining both frontend and backend production software. I
               love to work on different stuff that excite me. Outside of work, I
@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="flex text-base font-thin items-center mb-3 text-[#616161] justify-center">
+        <div className="flex text-base font-normal items-center mb-3 text-[#616161] justify-center">
           <a
             href="https://github.com/chetanXpro"
             target="_blank"
