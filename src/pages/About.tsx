@@ -8,10 +8,10 @@ const About = () => {
       <div className=" w-[100%] flex gap-3 justify-center flex-col items-center ">
         <h1 className="text-3xl">About Me</h1>
 
-        <div className="  gap-3 flex flex-col items-center p-3  w-[80%]">
+        <div className="  gap-3 flex flex-col items-center p-3  w-[70%]">
           {/* <h1 className="text-base">Abo</h1> */}
           <div className="gap-10 flex flex-col">
-            <p className="text-base text-center">
+            <p className="text-base font-light text-[#212121] text-center">
               My coding journey started in May 2022 when I decided to explore
               more about coding and building websites. I began by learning basic
               HTML, CSS, and JS. Addicted to coding, I dedicated 10-15 hours

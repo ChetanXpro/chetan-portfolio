@@ -1,22 +1,30 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
     <div className=" items-center justify-center w-full flex flex-col h-[90vh] ">
       <div className=" min-h-screen w-[100%] flex gap-4 justify-center flex-col items-center ">
+        <Image
+          className="mb-10"
+          src={"/assets/logo.png"}
+          alt="Logo"
+          width={100}
+          height={100}
+        />
         <h1 className="text-4xl">
           Hey There! I&apos;m{" "}
-          <span className="text-blue-500">Chetan Baliyan.</span>
+          <span className="text-[#F47C01]">Chetan Baliyan.</span>
         </h1>
-        <h3 className="text-2xl">I love building stuff</h3>
+        <h3 className="text-[28px]">I love building stuff</h3>
 
         <div className="  gap-3 flex flex-col items-center p-3  w-[60%]">
           {/* <h1 className="text-base">Abo</h1> */}
           <div className="gap-10 flex flex-col">
-            <p className="text-base text-center">
+            <p className="text-base font-extralight text-[#616161] text-center">
               I am based in Muzaffarnagar, India. I have experience developing
               and maintaining both frontend and backend production software. I
               love to work on different stuff that excite me. Outside of work, I
