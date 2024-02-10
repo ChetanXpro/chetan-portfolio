@@ -2,9 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="  flex justify-between items-center mt-40 text-[#212121]  w-[80%] py-4 ">
-      <p className="text-base font-light">Designed & Built by Chetan Baliyan</p>
-      <div className="flex text-base font-thin items-center mb-3 text-[#616161] justify-center">
+    <div className="  flex justify-between items-center mt-40  text-[#212121]  w-[80%] py-4 ">
+      <p className="text-xs flex-1 md:text-base  font-light">
+        Designed & Built by Chetan Baliyan
+      </p>
+      <div className="flex text-base font-thin items-center  h-full  text-[#616161] justify-center">
         <a
           href="https://github.com/chetanXpro"
           target="_blank"
