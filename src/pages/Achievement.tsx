@@ -3,9 +3,9 @@ import React from "react";
 
 const Achievement = () => {
   return (
-    <div className="gap-10 items-center  flex flex-col">
+    <div className="gap-10 items-center   flex flex-col">
       <h1 className="text-2xl font-bold">Some Achievements</h1>
-      <div className="flex gap-10 w-[70%] flex-wrap">
+      <div className="flex gap-10 w-[95%]  md:w-[70%] flex-wrap">
         {/* <div className="w-[50%] flex flex-wrap gap-1"> */}
         <div className="flex flex-col gap-5">
           <AchievementCard

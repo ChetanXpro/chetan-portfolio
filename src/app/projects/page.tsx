@@ -279,7 +279,7 @@ Objects in Git include things like commit objects, where details about changes a
 
   const [selectedProject, setSelectedProject] = React.useState(projectsList[0]);
   return (
-    <div className="  w-[80%]  text-white  flex-col flex items-center   ">
+    <div className="  w-[95%] md:w-[80%]  text-white  flex-col flex items-center   ">
       <div className=" w-full  h-[10%]  flex items-center justify-center ">
         <h1 className="text-2xl font-bold text-black ">Projects</h1>
       </div>

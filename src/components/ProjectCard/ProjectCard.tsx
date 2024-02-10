@@ -33,7 +33,7 @@ const ProjectCard = ({
     >
       <h1 className="text-lg text-[#212121]">{project.name}</h1>
       <p className="text-sm text-[#616161]">{project.description}</p>
-      {/* <div>
+      <div>
         {project?.buttons.map((button) => {
           return (
             <Button key={button.name}>
@@ -41,7 +41,7 @@ const ProjectCard = ({
             </Button>
           );
         })}
-      </div> */}
+      </div>
     </div>
   );
 };

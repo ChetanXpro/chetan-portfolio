@@ -6,25 +6,26 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" items-center justify-center w-full flex flex-col h-[90vh] ">
-      <div className=" min-h-screen w-[100%] flex gap-4 justify-center flex-col items-center ">
-        <Image
-          className="mb-10"
-          src={"/assets/logo.png"}
-          alt="Logo"
-          width={100}
-          height={100}
-        />
-        <h1 className="text-4xl">
-          Hey There! I&apos;m{" "}
-          <span className="text-[#F47C01]">Chetan Baliyan.</span>
-        </h1>
-        <h3 className="text-[28px]">I love building stuff</h3>
-
-        <div className="  gap-3 flex flex-col items-center p-3  w-[60%]">
+    <div className=" flex min-h-screen w-full  flex-col  ">
+      <div className=" flex min-h-screen w-[100%] flex-col items-center justify-center gap-6 ">
+        <div className="flex flex-col gap-3 w-full mt-5 items-center ">
+          <Image
+            className="mb-10"
+            src={"/assets/logo.png"}
+            alt="Logo"
+            width={100}
+            height={100}
+          />
+          <h1 className="text-2xl md:text-4xl flex flex-col  md:gap-4 md:flex-row">
+            Hey There! I&apos;m{" "}
+            <span className="text-[#F47C01]">Chetan Baliyan.</span>
+          </h1>
+          <h3 className="text-[20px] md:text-[28px]">I love building stuff</h3>
+        </div>
+        <div className="  w-full  flex md:w-[60%] flex-col items-center gap-3  p-3">
           {/* <h1 className="text-base">Abo</h1> */}
-          <div className="gap-10 flex flex-col">
-            <p className="text-base font-normal text-[#616161] text-center">
+          <div className="flex flex-col gap-10">
+            <p className="text-center text-base font-normal text-[#616161]">
               I am based in Muzaffarnagar, India. I have experience developing
               and maintaining both frontend and backend production software. I
               love to work on different stuff that excite me. Outside of work, I
@@ -32,13 +33,13 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="flex text-base font-normal items-center mb-3 text-[#616161] justify-center">
+        <div className="mb-3 flex flex-col    justify-center gap-2  text-base font-normal text-[#616161] lg:flex-row ">
           <a
             href="https://github.com/chetanXpro"
             target="_blank"
-            className="text-icon-link text-link mx-2"
+            className="text-icon-link text-link  mx-2"
           >
-            <div className=" flex gap-1 items-center">
+            <div className=" flex items-center gap-1 ml-2">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -61,15 +62,12 @@ const Hero = () => {
             </div>
           </a>
           <a
-            data-v-41a1427e=""
-            data-v-26e26f8f=""
             href="https://www.linkedin.com/in/chetan-baliyan/"
             target="_blank"
-            className="flex gap-1 items-center mx-2"
+            className="mx-2 flex items-center  gap-1"
           >
-            <div data-v-41a1427e="" className="flex gap-1 items-center mx-2">
+            <div data-v-41a1427e="" className="mx-2 flex items-center gap-1">
               <svg
-                data-v-41a1427e=""
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fab"
@@ -95,9 +93,9 @@ const Hero = () => {
             data-v-26e26f8f=""
             href="https://twitter.com/Chetanbaliyan16"
             target="_blank"
-            className="flex gap-1 items-center mx-2"
+            className="mx-2 flex items-center gap-1"
           >
-            <div data-v-41a1427e="" className="flex gap-1 items-center mx-2">
+            <div data-v-41a1427e="" className="mx-2 flex items-center gap-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 enable-background="new 0 0 72 72"
@@ -125,7 +123,7 @@ const Hero = () => {
             target="_blank"
             className="text-icon-link text-link mx-2"
           >
-            <div data-v-41a1427e="" className="flex gap-1 items-center mx-2">
+            <div data-v-41a1427e="" className="mx-2 flex items-center gap-1">
               <svg
                 data-v-41a1427e=""
                 aria-hidden="true"
@@ -149,9 +147,9 @@ const Hero = () => {
             </div>
           </a>
         </div>
-        <div className="flex items-center  w-full justify-center gap-4">
+        <div className="flex w-full  items-center justify-center gap-4">
           <a href="mailto:chetanbaliyan10@gmail.com">
-            <Button className="w-24 py-6 border border-blue-500 hover:bg-blue-500 hover:text-white font-medium text-base bg-white text-black">
+            <Button className="w-24 border border-blue-500 bg-white py-6 text-base font-medium text-black hover:bg-blue-500 hover:text-white">
               Contact
             </Button>
           </a>
@@ -159,7 +157,7 @@ const Hero = () => {
             target="_blank"
             href={`${process.env.BASE_DOMAIN}/assets/Chetan_Resume.pdf`}
           >
-            <Button className="w-24 py-6 border border-blue-500 hover:bg-blue-500 hover:text-white font-medium text-base bg-white text-black">
+            <Button className="w-24 border border-blue-500 bg-white py-6 text-base font-medium text-black hover:bg-blue-500 hover:text-white">
               Resume
             </Button>
           </a>
