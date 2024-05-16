@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Project from "./projects/page";
-
 export default function Home() {
   return (
     <main className="flex w-full font-serif  text-[#212121]   min-h-screen flex-col    items-center justify-center   ">
@@ -53,7 +50,7 @@ export default function Home() {
                   <code>Nodejs-whisper</code>
                 </a>
                 <span>:</span> nodeJS Bindings for Whisper - the CPU version of
-                OpenAI's Whisper.
+                OpenAI&apos;s Whisper.
               </li>
               <li>
                 <a
@@ -129,7 +126,7 @@ export default function Home() {
                   <code>Document-AI</code>
                 </a>
                 : A tool to extract structured data from a PDF, offering a good
-                open-source alternative to Google's Document AI.
+                open-source alternative to Google&apos;s Document AI.
               </li>
               <li>
                 <a
