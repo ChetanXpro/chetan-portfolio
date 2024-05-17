@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="flex w-full font-serif  text-[#212121]   min-h-screen flex-col    items-center justify-center   ">
-      <div className="h-[90%] flex flex-col gap-6 items-center ">
+      <div className="h-[90%] px-3 py-7 flex flex-col gap-6 items-center ">
         <div className="flex justify-center flex-col items-center gap-4  ">
           <h1 className="text-3xl underline text-blue-700 font-semibold">
             Chetan Baliyan
@@ -39,8 +39,8 @@ export default function Home() {
 
         <div className="flex flex-col gap-2">
           <h2 className="italic font-bold">Open Source Projects</h2>
-          <div>
-            <ul className="list-disc list-inside flex flex-col gap-1">
+          <div className="">
+            <ul className="list-disc px-4  flex flex-col gap-1">
               <li className="">
                 <a
                   className="underline text-blue-700"
@@ -49,8 +49,8 @@ export default function Home() {
                 >
                   <code>Nodejs-whisper</code>
                 </a>
-                <span>:</span> nodeJS Bindings for Whisper - the CPU version of
-                OpenAI&apos;s Whisper.
+                : nodeJS Bindings for Whisper - the CPU version of OpenAI&apos;s
+                Whisper.
               </li>
               <li>
                 <a
@@ -74,7 +74,7 @@ export default function Home() {
                 : A serverless video transcoding service which can run on AWS
                 ECS and Lambda.
               </li>
-              <li>
+              <li className="list-item">
                 <a
                   className="underline text-blue-700"
                   href="https://github.com/ChetanXpro/chatgpt-telegram-bot"
